@@ -225,3 +225,37 @@ footer {
     background-color: #ff4971;
     color: #fff;
 }
+
+/* Sticky navigation */
+.sticky-nav {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #ff6781;
+    padding: 10px;
+    z-index: 1000;
+    width: 100%;
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: space-evenly; /* Membagi ruang secara merata */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+}
+
+/* Style untuk tombol */
+.sticky-nav .btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #ff6781;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px; /* Memberikan jarak antar tombol */
+    flex: 1; /* Membuat tombol memiliki ukuran yang sama */
+    text-align: center;
+}
+
+.sticky-nav .btn:hover {
+    background-color: #ff4971;
+    color: #fff;
+}
