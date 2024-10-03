@@ -29,8 +29,12 @@ body {
     padding: 10px;
     z-index: 1000;
     width: 100%;
+    display: flex; /* Menjadikan elemen-elemen di dalam sticky-nav flexbox */
+    justify-content: space-evenly; /* Memberikan jarak yang merata antar tombol */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
 }
 
+/* Style untuk tombol sticky nav */
 .sticky-nav .btn {
     padding: 10px 20px;
     background-color: #fff;
@@ -40,6 +44,9 @@ body {
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
+    margin: 5px; /* Memberikan jarak antar tombol */
+    flex: 1; /* Membuat tombol memiliki ukuran yang sama */
+    text-align: center;
 }
 
 .sticky-nav .btn:hover {
@@ -120,7 +127,7 @@ footer {
     color: #555;
 }
 
-/* Style untuk button */
+/* Style untuk button umum */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -142,6 +149,7 @@ footer {
     margin-top: 20px;
 }
 
+/* Galeri untuk memory */
 .memory-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -172,7 +180,7 @@ footer {
     color: #555;
 }
 
-/* Hover effect for memory cards */
+/* Hover effect untuk memory cards */
 .memory-item:hover {
     transform: scale(1.05);
 }
@@ -190,72 +198,4 @@ footer {
     .memory-item {
         width: 90%; /* Gambar akan melebar sesuai layar di perangkat kecil */
     }
-}
-
-/* Sticky navigation */
-.sticky-nav {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    background-color: #ff6781;
-    padding: 10px;
-    z-index: 1000;
-    width: 100%;
-    display: flex; /* Menjadikan elemen-elemen di dalam sticky-nav flexbox */
-    justify-content: space-evenly; /* Memberikan jarak yang merata antar tombol */
-    align-items: center; /* Menyelaraskan elemen secara vertikal */
-}
-
-/* Style untuk tombol */
-.sticky-nav .btn {
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #ff6781;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 5px; /* Memberikan jarak antar tombol */
-    flex: 1; /* Menjadikan tombol memiliki ukuran yang sama */
-    text-align: center;
-}
-
-.sticky-nav .btn:hover {
-    background-color: #ff4971;
-    color: #fff;
-}
-
-/* Sticky navigation */
-.sticky-nav {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    background-color: #ff6781;
-    padding: 10px;
-    z-index: 1000;
-    width: 100%;
-    display: flex; /* Menggunakan Flexbox */
-    justify-content: space-evenly; /* Membagi ruang secara merata */
-    align-items: center; /* Menyelaraskan elemen secara vertikal */
-}
-
-/* Style untuk tombol */
-.sticky-nav .btn {
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #ff6781;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 5px; /* Memberikan jarak antar tombol */
-    flex: 1; /* Membuat tombol memiliki ukuran yang sama */
-    text-align: center;
-}
-
-.sticky-nav .btn:hover {
-    background-color: #ff4971;
-    color: #fff;
 }
