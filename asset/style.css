@@ -119,3 +119,75 @@ footer {
     font-style: italic;
     color: #555;
 }
+
+/* Style untuk button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9999;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #ff6666;
+}
+
+/* Jika ingin menambah style khusus untuk bagian Our Memories */
+.our-memories {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.memory-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.memory-item {
+    width: 300px; /* Ukuran gambar dan item memory */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.memory-item img {
+    width: 100%; /* Gambar akan memenuhi kontainer */
+    height: auto;
+    border-radius: 10px;
+}
+
+.memory-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Hover effect for memory cards */
+.memory-item:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #888;
+    text-align: center;
+}
+
+/* Responsiveness untuk Our Memory */
+@media (max-width: 768px) {
+    .memory-item {
+        width: 90%; /* Gambar akan melebar sesuai layar di perangkat kecil */
+    }
+}
